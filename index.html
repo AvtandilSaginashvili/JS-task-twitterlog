@@ -10,34 +10,38 @@
 </head>
 <body>
     
-    <div class="box">
+    <button class="mainbutt" onclick="logout()" id="mbtn" type="button">Log out</button>
 
-        <div class="twtlog">
-            <svg width="40" height="34" viewBox="0 0 40 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M35.8883 8.85282C35.9137 9.20813 35.9137 9.56352 35.9137 9.91883C35.9137 20.7563 27.665 33.2437 12.5888 33.2437C7.94414 33.2437 3.62945 31.8984 0 29.5635C0.659922 29.6396 1.29437 29.665 1.97969 29.665C5.81211 29.665 9.34008 28.3706 12.1573 26.1625C8.55328 26.0863 5.53297 23.7259 4.49234 20.4772C5 20.5533 5.50758 20.6041 6.04062 20.6041C6.77664 20.6041 7.51273 20.5025 8.19797 20.3249C4.44164 19.5634 1.6243 16.264 1.6243 12.2792V12.1777C2.71562 12.7869 3.98477 13.1676 5.32984 13.2183C3.12172 11.7462 1.67508 9.23352 1.67508 6.39086C1.67508 4.86805 2.08109 3.47211 2.7918 2.25383C6.82734 7.22844 12.8934 10.4771 19.6953 10.8325C19.5684 10.2234 19.4923 9.58891 19.4923 8.95438C19.4923 4.43657 23.1471 0.756409 27.6902 0.756409C30.0506 0.756409 32.1826 1.74625 33.6801 3.34524C35.5328 2.98992 37.3095 2.30461 38.8831 1.36555C38.2739 3.26914 36.9795 4.86813 35.2791 5.88328C36.9288 5.70571 38.5278 5.24875 39.9998 4.6143C38.8833 6.2386 37.4873 7.68524 35.8883 8.85282Z" fill="#1D9BF0"/>
-                </svg>                
-        </div>
+    <div id="main" style="width: 100%; display: none;">
+
+        <div class="maindiv">
+            
+            <div class="box">
+
+                <div class="twtlog">
+                    <svg width="40" height="34" viewBox="0 0 40 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M35.8883 8.85282C35.9137 9.20813 35.9137 9.56352 35.9137 9.91883C35.9137 20.7563 27.665 33.2437 12.5888 33.2437C7.94414 33.2437 3.62945 31.8984 0 29.5635C0.659922 29.6396 1.29437 29.665 1.97969 29.665C5.81211 29.665 9.34008 28.3706 12.1573 26.1625C8.55328 26.0863 5.53297 23.7259 4.49234 20.4772C5 20.5533 5.50758 20.6041 6.04062 20.6041C6.77664 20.6041 7.51273 20.5025 8.19797 20.3249C4.44164 19.5634 1.6243 16.264 1.6243 12.2792V12.1777C2.71562 12.7869 3.98477 13.1676 5.32984 13.2183C3.12172 11.7462 1.67508 9.23352 1.67508 6.39086C1.67508 4.86805 2.08109 3.47211 2.7918 2.25383C6.82734 7.22844 12.8934 10.4771 19.6953 10.8325C19.5684 10.2234 19.4923 9.58891 19.4923 8.95438C19.4923 4.43657 23.1471 0.756409 27.6902 0.756409C30.0506 0.756409 32.1826 1.74625 33.6801 3.34524C35.5328 2.98992 37.3095 2.30461 38.8831 1.36555C38.2739 3.26914 36.9795 4.86813 35.2791 5.88328C36.9288 5.70571 38.5278 5.24875 39.9998 4.6143C38.8833 6.2386 37.4873 7.68524 35.8883 8.85282Z" fill="#1D9BF0"/>
+                        </svg>                
+                </div>
+                
+                <h6 class="h6-logtwt">Log out of Twitter?</h6>
+                <p class="p1">You can always log back in at any<br>
+                    time. If you just want to<br>
+                    switch accounts, you can do<br>
+                    that by adding an<br>
+                    existing account.</p>
         
-        <h6 class="h6-logtwt">Log out of Twitter?</h6>
-        <p class="p1">You can always log back in at any<br>
-            time. If you just want to<br>
-            switch accounts, you can do<br>
-            that by adding an<br>
-            existing account.</p>
+                <div style="display: flex; justify-content: center;">
+                    <button class="logout" type="button">Log out</button>
+                </div>
+        
+                <div style="display: flex; justify-content: center;">
+                    <button onclick="cancel()" class="cancel" type="button">Cancel</button>
+                </div>
+        
+            </div>
 
-        <div style="display: flex; justify-content: center;">
-            <button class="logout" type="button">Log out</button>
         </div>
-
-        <div style="display: flex; justify-content: center;">
-            <button onclick="cancel()" class="cancel" type="button">Cancel</button>
-        </div>
-
-    </div>
-
-    <div class="maindiv" id="main">
-
-        <button class="mainbutt" onclick="logout()" type="button">Log out</button>
 
     </div>
 
